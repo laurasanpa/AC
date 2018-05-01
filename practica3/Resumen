@@ -1,0 +1,13 @@
+# RESUMEN PRÁCTICA 3: HERRAMIENTAS DE PROGRAMACIÓN PARALELA #
+
+**VARIABLES DE CONTROL QUE AFECTAN A  REGIONES "PARALLEL"**
+
+1.**dyn-var**
+
+Controla si está habilitado el ajuste dinámico de uso de threads para regiones paralelas futuras.
+Valor: True o False.
+Variable de entorno asociada: OMP_DYNAMIC. Establece dyn-var (VIC) el ajuste dinámico de las hebras 
+que usa la región paralela. Los valores validos para dynamic son true o false.Ej: export OMP_DYNAMIC=TRUE.
+Consultor: int omp_get_dynamic(). Si el valor devuelto es distinto de cero, está habilitado el ajuste dinámico.
+Modificador: void omp_set_dynamic(int val). Indica que el número de subprocesos disponibles en la región paralela subsiguiente
+se puede ajustar el tiempo de ejecución.
