@@ -1,0 +1,10 @@
+ 1. ¿Desde cuándo se establece la medida de referencia de de clock_get_time()?
+	Desde el 0 de EPOCH el 1 de enero de 1970.
+2. ¿Qué es y qué contiene el directorio PBS_O_WORKDIR?
+
+
+
+Vectores locales := se almancenan en pila, se satura.
+Vectores globales:= en tiempo de compilación se reservan 2gb. En el último se sale.
+Vectores dynamic := se almacenan en el heap, cuando se hace la reserva de memoria, incluso cuando hay swapping. 
+
